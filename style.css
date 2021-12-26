@@ -1,0 +1,436 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width:100%;
+}
+
+/*CONTAINER PRINCIPAL*/
+.flex-container{
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+    width: 100%; 
+}
+
+
+/*TOP-NAV*/
+
+header.top{
+    display: flex;
+    align-items: center;
+    height:100px;  
+  
+    background-color: #122A57;
+}
+
+.logo h1{
+    color: white;
+}
+  
+.list-itens li a{
+    color: white;
+}
+
+#btn-mobile{
+    display: none;
+    width: 50px;
+    margin-left: 10px;
+    color: #122A57;
+}
+
+header .nav{
+    justify-content: space-between;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+    width: 100%; 
+}
+
+
+.list-itens{
+    display: flex;
+    align-items:center;
+    width:100%;
+    height: 100%;
+    max-width: 300px;
+    justify-content: space-between;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    height:100vh;
+    justify-content: space-between;
+}
+
+
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+}
+
+.texto-apresentacao h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.texto-apresentacao p{
+    margin-bottom: 10px;
+}
+.btn-blue{
+    color: white;
+    background-color: #122A57;
+    border-radius: 30px;
+    text-align: center;
+    width:180px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+#quem-somos div{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos h2{
+    font-size: 32px;
+    align-items: center;
+    color:#122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+#quem-somos h2::before{
+    content:"";
+    height:50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+#quem-somos p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+
+#quem-somos img{
+    width: 400px;
+}
+
+.container-externo{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+
+#servicos h2{
+
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.list-servicos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list-servicos .item-servico {
+    text-align: center;
+    text-decoration-color: white;
+}
+
+.item-servico p {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.item-servico img{
+    width: 80%;
+    margin: auto;
+}
+
+.btn-white{
+    width: 120px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    color: #122A57;
+    line-height: 50px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#planos{ 
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#planos h2{
+    font-size: 32px;
+    padding-top: 50px;
+    color: #122A57;
+}
+
+.list-plano{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.plano-item h3{
+    color:#122A57;
+}
+
+.plano-item{
+    flex: 1;
+    border:5px #122A57 solid;
+    margin-right: 20px;
+    padding: 10px; 
+}
+
+.plano-item .btn-blue{
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.plano-item h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.plano-item h3::after{
+    content:"";
+    width: 100%;
+    margin-top: 15px;
+    height: 3px;
+    background-color:#122A57;
+}
+
+
+.plano-item ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+
+.plano-item ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.plano-item ul li::before{
+    content:"";
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    background-color: #122A57;
+}
+
+
+#rodape{
+    background-color: #122A57;
+    width: 100%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rodape p {
+    color:#fff;
+}
+
+/* responsividade*/
+
+@media (max-width: 960px){
+    .flex-container{
+        padding: 2px;
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        height: 100%;
+        flex-direction: column;
+    }
+    .apresentacao img{
+        width: 100%; 
+    }
+
+    #quem-somos img{
+        width: 100%;
+    }
+
+
+    .list-servicos{
+        flex-direction: column;
+        
+    }
+    .item-servico{
+        margin-bottom: 25px;
+    }
+
+    .list-plano{
+        flex-direction: column;
+    }
+
+    .plano-item{
+        margin-bottom: 25px;
+    }
+    #rodape{
+        flex-direction: column;
+    }
+
+
+}
+
+@media(max-width:510px) {
+
+    .nav{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+
+    .list-itens {
+        max-width: 100%;
+        flex-direction: column;
+        margin-left: 5px;
+        z-index: 1000; 
+        transition: 0.6s; 
+        height: 0px;
+        display: none;
+        margin-top: 15px;
+        }
+
+   .list-itens li a{
+       border-bottom:1px solid rgba(0, 0, 0, .05); 
+       margin-bottom: 40px;
+       
+   }
+
+   .list-itens li{
+    margin-bottom: 10px;
+    
+}
+
+    .list-itens li:hover{
+        width: 100%;
+        background-color:rgba(0, 0, 0, .05);
+    }
+   
+    #btn-mobile{
+        display: flex;
+        border: none;
+        cursor: pointer;
+        font-size: 5px;
+        background: none;
+        gap: .5rem;
+
+
+    }
+
+    #nav{
+        transition: 0.6s;
+    }
+
+    #nav.active{
+        visibility: visible;
+        overflow-y: auto;
+        height: 50vh;
+        padding-bottom:150px ;
+        transition: 0.6s;
+        
+    }
+
+    #nav.active .list-itens{
+      display: block;
+      border-radius: none;
+      
+        
+    }
+
+    #hamburguer{
+        border-top: 2px solid #fff;
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+        
+    }
+
+
+
+   
+
+
+    
+}
+
+
+    
+
