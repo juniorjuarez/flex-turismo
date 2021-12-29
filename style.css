@@ -427,6 +427,10 @@ header .nav{
         font-size: 18px;
         
     }
+
+    .texto-apresentacao p{
+        font-size: 8px;
+    }
     .texto-apresentacao a{
         font-size: 8px;
     }
