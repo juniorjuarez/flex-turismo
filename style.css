@@ -356,9 +356,8 @@ header .nav{
         margin-left: 5px;
         z-index: 1000; 
         transition: 0.6s; 
-        height: 0px;
         display: none;
-        margin-top: 15px;
+        margin-top: 8px;
         }
 
    .list-itens li a{
