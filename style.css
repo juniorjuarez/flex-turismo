@@ -394,7 +394,7 @@ header .nav{
     #nav.active{
         visibility: visible;
         overflow-y: auto;
-        padding-bottom:120px ;
+        padding-bottom:140px ;
         transition: 0.6s;     
     }
 
