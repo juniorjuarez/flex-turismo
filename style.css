@@ -434,9 +434,12 @@ header .nav{
         
     }
 
+    .texto-apresentacao{
+        margin-bottom: -90px;
+    }
+
     .texto-apresentacao h1{
-        font-size: 18px;
-        
+        font-size: 18px;  
     }
 
     .texto-apresentacao p{
@@ -444,24 +447,30 @@ header .nav{
     }
     .texto-apresentacao a{
         font-size: 8px;
+        
     }
 
     #quem-somos p{
-        font-size: 10px;
+        font-size: 8px;
     }
 
     #quem-somos h2{
         
         font-size: 18px;
     }
-
+   
     #quem-somos h2::before{
+        display: none;
         content:"";
         height:30px;
         width: 5px;
         margin-right: 5px;
         background-color: #122A57;
         position: relative;
+    }
+   
+    #quem-somos{
+        flex-direction: column-reverse;
     }
 
     #servicos h2{
