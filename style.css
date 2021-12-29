@@ -334,6 +334,17 @@ header .nav{
 
 @media(max-width:510px) {
 
+    .btn-blue{
+        color: white;
+        background-color: #122A57;
+        border-radius: 30px;
+        text-align: center;
+        width:90px;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+    }
+
     .nav{
         flex-direction: column;
         width: 100%;
@@ -440,6 +451,7 @@ header .nav{
     }
 
     #quem-somos h2{
+        
         font-size: 18px;
     }
 
@@ -453,12 +465,8 @@ header .nav{
     }
 
     #servicos h2{
+        margin-left: 3px;
         font-size: 18px;
-    }
-
-    #planos h2{
-        font-size: 18px;
-        margin-bottom: 15px;
     }
 
     .item-servico img{
@@ -472,8 +480,11 @@ header .nav{
         font-size:8px; 
     }
 
-    #rodape{
-        font-size:8px;
+
+    #planos h2{
+        margin-left: 3px;
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 
     .plano-item h3{
@@ -488,15 +499,8 @@ header .nav{
         font-size: 8px;
     }
 
-    .btn-blue{
-        color: white;
-        background-color: #122A57;
-        border-radius: 30px;
-        text-align: center;
-        width:90px;
-        display: block;
-        height: 20px;
-        line-height: 20px;
+    #rodape{
+        font-size:8px;
     }
 
 }
